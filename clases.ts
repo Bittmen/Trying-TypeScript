@@ -12,6 +12,7 @@ function accesorios(item: string){
     }
 }
 
+@accesorios("Control")
 class GameConsoles implements allThings{
 
     //Propiedades
@@ -36,7 +37,7 @@ class GameConsoles implements allThings{
 }
 
 var games = new GameConsoles(["Halo","GTA5","GOW"],[""],[""]);
-console.log(games);
+console.log(games.compra());
 
 console.log(games.setGames("Otro"));
 
